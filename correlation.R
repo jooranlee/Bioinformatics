@@ -1,5 +1,6 @@
 #see the correlation between PDC(patient-derived cells) and parental tissue using their WTS data, respectively
-setwd("/Users/jooranlee/Dropbox/Mac/Desktop/correlation") 
+#set working directory to where the files are located
+setwd("/Users/jooranlee/Desktop/snu_BI/correlation") 
 df <- read.csv('dds_log2_tranform_220715.csv')
 rownames(df) <- df$X
 df$X <- NULL
