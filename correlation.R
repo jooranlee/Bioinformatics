@@ -46,6 +46,3 @@ sample.cor<-cor(df[gene.cor>0.1, ], method="spearman")
 ggplot(melt(sample.cor) %>% dplyr::filter(melt(sample.cor)$Var1 %in% grep(sample_no, pattern="_t$", value=T), 
               Var2 %in% grep(sample_no, pattern="_p$", value=T))) + geom_tile(aes(x=Var1, y=Var2, fill=value))
 
-
-
-
