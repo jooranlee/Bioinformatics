@@ -4,7 +4,8 @@ library(R.utils)
 library(readxl)
 library(ggplot2)
 library(dplyr)
-setwd('/Users/jooranlee/Desktop/BRCA/maf')
+#set working directory to where the files are located
+setwd('/Users/jooranlee/Desktop/snu_BI/maftools')
 
 #add data info
 maf.somatic = read.maf('OVCA113_somatic.maf.gz')
